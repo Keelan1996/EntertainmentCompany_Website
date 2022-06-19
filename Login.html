@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KDT Entertainment</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- end of bootstrap -->
+
+<!-- icon tab code-->
+<link rel="icon" href="Images/c-image.jpg" type="c-icon"/>
+
+<!-- css code -->
+<link href="stylesheet.css" rel="stylesheet">
+
+<!-- javascript code-->
+ <script src="script.js"></script> 
+</head>
+
+<body>
+
+
+<!--Navigation bar code-->
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>Currently on show
+			<ul>
+				<li><a href="ReleasedInformation.html">Info</a></li>
+				<li><a href="ReleasedTrailers.html">Teaser</a></li>
+			</ul>
+		</li>
+        <li>Forthcoming
+			<ul>
+				<li><a href="UpcomingInformation.html">Info</a></li>
+				<li><a href="UpcomingTrailers.html">Teaser</a></li>
+			</ul>
+		</li>
+        <li><a href="Order.html">Ordering Details</a></li>
+		<li><a href="Login.html" class= "activePage">Log-In</a></li>
+	</ul>
+</nav>
+
+<div id="info">
+	<h1 id="name"></h1>
+	<h1 id="email"></h1>
+	<h1 id="password"></h1>
+</div>
+
+<!-- sign up account code -->
+ <form style="border:1px solid #ccc" id="signup">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Fill out to create an account.</p>
+    <hr>
+	
+	<label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" value="NAME" name="name" id="newName" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" value="EMAIL" name="email" id="newEmail" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" value="PASSWORD" name="psw" id="newPassword" required>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn" onClick="SignUp()">Sign Up</button>
+    </div>
+  </div>
+</form> 
+
+<!-- email sign up code -->
+ <form id="login">
+  <div class="container">
+	<h1>Sign In</h1>
+    <label for="uname"><b>Email</b></label>
+    <input type="text" id="findEmail" value="EMAIL" placeholder="Enter Email" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="findPassword" value="PASSWORD" placeholder="Enter Password" name="psw" required>
+
+    <button type="button" onclick="Login()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</form> 
+
+
+
+
+
+ <!--Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

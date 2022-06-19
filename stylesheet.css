@@ -1,0 +1,278 @@
+/* font style for all the webpage==========================================================================================================================*/
+*{
+	font-family: "serif";
+}
+
+
+/* the background code and center of headings  ===========================================================================================================*/
+body {
+	background-image: url("Images/Main/background6.jpg");
+	color: black;
+}
+h2 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+	color: white;
+}
+
+/* Navigation bar code at the top samples taken from https://www.w3schools.com/css/css_examples.asp  =======================================================*/
+nav ul {
+	background-color: pink;
+	text-align: center;
+	padding: 15;
+	margin: 0% -.6% 0% -.6%;
+}
+
+nav li {
+	font-size: 1.5em;
+	line-height: 45px;
+	text-align: left;
+	background-color: pink;
+}
+
+nav a {
+	color: white;
+	display: block;
+	padding-left: 20px;
+}
+nav a.activePage {
+	background-color: peach;
+	color: purple;
+	cursor: default;
+}
+
+nav a:hover {
+	background-color: #FFCC99;
+}
+
+
+
+nav li li {
+	font-size: .9em;
+}
+
+
+
+nav a {
+	border-bottom: none;
+}
+
+nav > ul > li {
+	text-align: center;
+}
+
+nav > ul > li > a {
+	padding-left: 0;
+}
+
+nav li {
+	width: 20%;
+	border-bottom: none;
+	height: 60px;
+	line-height: 50px;
+	font-size: 1.8em;
+	display: inline-block;
+	margin-right: -6px;
+}
+
+nav li ul li {
+	display: block;
+	width: 100%;
+}
+
+nav li ul {
+	position: absolute;
+	display: none;
+	width: 16.65%;
+	margin: 0;
+}
+
+nav li:hover ul {
+	display: block;
+}
+
+
+
+
+/* Main page layout and design samples taken from https://www.w3schools.com/css/css_examples.asp ========================================================= */
+
+
+.button:hover {
+    background-color: pink;
+}
+
+img, iframe {
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin: 1% 1% 1% 1%;
+}
+
+#news section {
+	float: left;
+	height: auto;
+	width: 80%;
+	margin: 1% 10% 1% 10%;
+	background-color:  pink;
+}
+
+.button {
+    background-color: #ad2162;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+section h2 {
+	color: white;
+}
+
+.info section, .info2 section {
+	height: auto;
+	width: 40%;
+	margin: 1% 5% 1% 5%;
+	background-color:  pink;
+}
+
+p {
+	color: black;
+	font-size: 100%;
+}
+
+.info section {
+	float: left;
+}
+
+.info2 section {
+	float: right;
+}
+
+/*  layout design code samples take from https://www.w3schools.com/css/css_examples.asp ===============================================================*/
+
+#table {
+    font-family: "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 80%;
+	margin: 1% 10% 1% 10%;
+}
+
+#table td, #table th {
+    border: 2px solid black;
+	text-align: center;
+    padding: 10px;
+	
+}
+
+footer {
+	width: 100%;
+	float: right;
+	display: block;
+    text-align: center;
+	width: 100%;
+	background-color: pink;
+	font-weight: italic;
+}
+
+#table tr:nth-child(even){background-color: pink;;}
+
+#table tr:hover {background-color: lightblue;;}
+
+tfoot, thead {
+	background-color:  pink;
+}
+
+#table th {
+    padding-top: 15px;
+	color: white;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color:  pink;
+    
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input boxes samples taken from https://www.w3schools.com/css/css_examples.asp =========================================================== */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: pink;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* the Change of styles for buttons on different screens https://www.w3schools.com/css/css_examples.asp ============================================= */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+/* Float of buttons that add an equal width https://www.w3schools.com/css/css_examples.asp ========================================================*/
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* style for buttonshttps://www.w3schools.com/css/css_examples.asp ========================================================================  */
+button {
+  background-color: green;
+  color: black;
+  padding: 15px 22px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:3;
+}
+
+/* container elements https://www.w3schools.com/css/css_examples.asp =========================================================================*/
+.container {
+  margin-top: 5%;
+  padding: 10px;
+  width: 70%;
+  margin-left: 20%;
+  background-color: pink;
+ 
+}
+
+/*  floats code https://www.w3schools.com/css/css_examples.asp ==========================================================================================*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*  style for  cancel button https://www.w3schools.com/css/css_examples.asp ================================================================== */
+.cancelbtn {
+  background-color: red;
+  padding: 14px 20px;
+ 
+}
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KDT Entertainment</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- end of bootstrap -->
+
+<!-- icon tab code-->
+<link rel="icon" href="Images/c-image.jpg" type="c-icon"/>
+
+<!-- CSS CODE -->
+<link href="stylesheet.css" rel="stylesheet">
+
+<!-- JAVASCRIPT CODE -->
+<script src="script.js"></script> 
+</head>
+
+<body>
+
+
+<!--Navigation bar code-->
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li>Currently on show
+			<ul>
+				<li><a href="ReleasedInformation.html">Info</a></li>
+				<li><a href="ReleasedTrailers.html">Teaser</a></li>
+			</ul>
+		</li>
+        <li>Forthcoming
+			<ul>
+				<li><a href="UpcomingInformation.html">Info</a></li>
+				<li><a href="UpcomingTrailers.html">Teaser</a></li>
+			</ul>
+		</li>
+        <li><a href="Order.html" class= "activePage">Ordering Details</a></li>
+		<li><a href="Login.html">Log-In</a></li>
+	</ul>
+</nav>
+<!-- end of navigation bar code -->
+
+
+<!-- code generator button -->
+<div>
+	<input type="text" id="GenerateCode" name="code" value="Code" disabled>
+	<input type="button" class="button" value="Generate Code" onClick="generateCode()">
+</div>
+<!-------------------------------------->
+
+<!-- ORDERING TABLE -->
+<table id="table">
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Cost</th>
+	<th>Purchase</th>
+  </tr>
+  <tr>
+    <td>Bill Burr</td>
+    <td>30-04-2020</td>
+	<td>20.00</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Bill Burr','30-04-2020',20.00)"></td>
+  </tr>
+  <tr>
+    <td>Lil Uzi Vert</td>
+    <td>01-05-2020</td>
+    <td>15.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Lil Uzi Vert','01-05-2020',15.99)"></td>
+  </tr>
+  <tr>
+    <td>Lil Tracy</td>
+    <td>30-04-2020</td>
+    <td>9.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Lil Tracy','30-04-2020',9.99)"></td>
+  </tr>
+  <tr>
+    <td>Harry Potter</td>
+    <td>01-05-2020</td>
+    <td>5.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Harry Potter','01-05-2020',5.99)"></td>
+  </tr>
+  <tr>
+    <td>Nothing Nowhere</td>
+    <td>17-05-2020</td>
+    <td>20.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Nothing Nowhere','17-05-2020',20.99)"></td>
+  </tr>
+  <tr>
+    <td>The Lighthouse</td>
+    <td>21-05-2020</td>
+    <td>12.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('The Lighthouse','21-05-2020',12.99)"></td>  </tr>
+  <tr>
+    <td>The Irishman</td>
+    <td>01-05-2020</td>
+    <td>19.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('The Irishman','01-05-2020',19.99)"></td>  </tr>
+  </tr>
+  <tr>
+    <td>Everybody's Everything</td>
+    <td>03-05-2020</td>
+    <td>14.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Everybodys Everything','03-05-2020',14.99)"></td>  </tr>
+  </tr>
+  <tr>
+    <td>Parasite</td>
+    <td>11-05-2020</td>
+    <td>14.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Parasite','11-05-2020',14.99)"></td>  </tr>
+  </tr>
+  <tr>
+    <td>Dave Chappelle</td>
+    <td>04-05-2020</td>
+    <td>5.99</td>
+	<td><input type="button" class="button" value="Order" name="Submit" onclick="Order('Dave Chappelle','04-05-2020',5.99)"></td>  </tr>
+  </tr>
+</table>
+
+
+<!-- DISCOUNT CODE PANEL -->
+
+<div class="panel">
+	<h3>Enter The Code Here:</h3>
+	<form>
+		<input type="text" id="code" name="code" value= "CLICK TO ENTER CODE HERE FIRST BEFORE ORDERING TO GET DISCOUNT!">
+	</form>
+</div>
+
+<!-- PURCHASING CALCULTIONS TABLE -->
+
+<h2>Shopping Cart</h2>
+<table id="table">
+	<tr>
+		<td>
+			<table  id="table">
+				<thead>
+					<tr>
+						<td>
+							Name
+						</td>
+						<td>
+							Date
+						</td>
+						<td>
+							Cost
+						</td>
+					</tr>
+				</thead>
+				<tbody id="orderedMovies">
+
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" id="totalPrice"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</td>
+	</tr>
+	<tr><td><input type="submit" class="button" value="Purchase" name="Submit" onclick="myOrder()"></td></tr>
+</table>
+
+
+
+<!--Footer code-->
+<footer><a href="Login.html">CLICK HERE TO LOGIN</a></footer>
+
+
+<!--Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
