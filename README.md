@@ -8,3 +8,6 @@ We were asked to use bootstrap in some aspects. This whole project was created a
 
 The following is the spec of the project we were given to implement:
 [specs.pdf](https://github.com/Keelan1996/EntertainmentCompany_Website/files/8936532/specs.pdf)
+
+
+Authors: Keelan, Liam and Thady
